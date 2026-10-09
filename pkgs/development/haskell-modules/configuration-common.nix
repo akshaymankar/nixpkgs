@@ -1731,6 +1731,9 @@ with haskellLib;
   # https://github.com/brendanhay/ede/pull/61
   ede = dontCheck super.ede;
 
+  # 2026-10-09: allow http-client-tls 0.4
+  http-barf = doJailbreak super.http-barf;
+
   update-nix-fetchgit =
     let
       # Deps are required during the build for testing and also during execution,
